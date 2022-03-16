@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `yarn add react-reveal`
 
+### `yarn add @mui/icons-material`
+
 
 ## Available Scripts
 
