@@ -6,17 +6,15 @@ function Section() {
 		<Wrap>
 			<ItemText>
 				<h1>Model S</h1>
-        <p>Order Online for Touchless Delivery</p>
+				<p>Order Online for Touchless Delivery</p>
 			</ItemText>
-      <ButtonGroup>
-        <LeftButton>
-          Custom Order
-        </LeftButton>
-        <RightButton>
-          Existing Inventory
-        </RightButton>
-      </ButtonGroup>
-      <DownArrow src="/images/down-arrow.svg"></DownArrow>
+			<Button>
+				<ButtonGroup>
+					<LeftButton>Custom Order</LeftButton>
+					<RightButton>Existing Inventory</RightButton>
+				</ButtonGroup>
+			</Button>
+			<DownArrow src='/images/down-arrow.svg'></DownArrow>
 		</Wrap>
 	)
 }
@@ -65,4 +63,7 @@ const RightButton = styled(LeftButton)`
 const DownArrow = styled.img`
   margin-top: 20px;
   height: 40px;
+  animation: animateDown infinite 1.5s;
 `
+
+const Button = styled.div``
