@@ -17,7 +17,10 @@ function Section({
 			<Button>
 				<ButtonGroup>
 					<LeftButton>{leftBtnText}</LeftButton>
-					<RightButton>{rightBtnText}</RightButton>
+
+        {/* rightBtnText exists only then appears it */}
+					{rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+
 				</ButtonGroup>
 				<DownArrow src='/images/down-arrow.svg'></DownArrow>
 			</Button>
