@@ -11,18 +11,21 @@ function Section({
 }) {
 	return (
 		<Wrap bgImage={backgroundImg}>
-			<ItemText>
-				<h1>{title}</h1>
-				<p>{description}</p>
-			</ItemText>
+			<Fade bottom>
+				<ItemText>
+					<h1>{title}</h1>
+					<p>{description}</p>
+				</ItemText>
+			</Fade>
 			<Button>
-				<ButtonGroup>
-					<LeftButton>{leftBtnText}</LeftButton>
+				<Fade bottom>
+					<ButtonGroup>
+						<LeftButton>{leftBtnText}</LeftButton>
 
-        {/* rightBtnText exists only then appears it */}
-					{rightBtnText && <RightButton>{rightBtnText}</RightButton>}
-
-				</ButtonGroup>
+						{/* rightBtnText exists only then appears it */}
+						{rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+					</ButtonGroup>
+				</Fade>
 				<DownArrow src='/images/down-arrow.svg'></DownArrow>
 			</Button>
 		</Wrap>
