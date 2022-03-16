@@ -16,6 +16,7 @@ function Section() {
           Existing Inventory
         </RightButton>
       </ButtonGroup>
+      <DownArrow src="/images/down-arrow.svg"></DownArrow>
 		</Wrap>
 	)
 }
@@ -47,7 +48,7 @@ const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
   height: 40px;
   width: 256px;
-  color: white:
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,4 +59,10 @@ const LeftButton = styled.div`
   cursor: pointer;
 `
 
-const RightButton = styled(LeftButton)``
+const RightButton = styled(LeftButton)`
+`
+
+const DownArrow = styled.img`
+  margin-top: 20px;
+  height: 40px;
+`
