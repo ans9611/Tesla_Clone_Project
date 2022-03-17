@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close'
-import { selectCars } from '../features/car/carSlice'
+import CloseIcon from '@material-ui/icons/Close';
+import { selectCars } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';
 
 function Header() {
@@ -31,8 +31,7 @@ function Header() {
 				<CloseWrapper>
 					<CustomClose onClick={() => setBurgerStatus(false)} />
 				</CloseWrapper>
-				{cars &&
-					cars.map((car, index) => (
+				{cars && cars.map((car, index) => (
 						<li key={index}><a href='#'>{car}</a></li>
 					))}
 				<li><a href='#'>Existing Inventory</a></li>
